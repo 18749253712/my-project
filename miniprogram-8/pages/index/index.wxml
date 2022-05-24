@@ -1,0 +1,45 @@
+<view class="box">
+     <view class="first">
+         <view>
+             <image src="{{shuz.imgurl}}"></image>
+         </view>
+         <view>
+             ￥<text style="color: red;">{{pricelist[shuz.id].price}}</text>
+             <view>{{shuz.tltle}}</view>
+         </view>
+         <view>
+         <image src="https://s1.ax1x.com/2022/03/28/qrPgHK.png"></image>
+             到店支付
+         </view>
+     </view>
+     <view class="second">
+       <view>
+           <text>数量</text>
+       </view>
+        <view>
+          <text class="jia" bindtap="jian">-</text>
+          <input type="text" class="input" placeholder="{{num}}" bindtap="input"/>
+          <text class="jia" bindtap="jia">+</text>
+        </view>
+     </view>
+     <view class="third">
+          <view class="up">
+              <view><text>*</text>姓名</view>
+              <view><input type="text" placeholder="请输入姓名"/></view>
+          </view>
+          <view class="down">
+              <view><text>*</text>手机</view>
+              <view><input type="text" placeholder="请输入手机号码"/></view>
+          </view>
+     </view>
+     <view class="fourth">
+        <view class="up">
+              <view><text style="color: red;">*</text>买家留言</view>
+              <view><input type="text" placeholder="请输入买家留言"/></view>
+          </view>
+     </view>
+     <view class="bottom">
+        ￥<text>{{totalPrice}}</text>
+        <text bindtap="submit">提交订单</text>
+     </view>
+</view>

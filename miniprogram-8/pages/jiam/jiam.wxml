@@ -1,0 +1,70 @@
+<view class="box">
+     <view class="head">
+         <image src="https://s1.ax1x.com/2022/03/26/qdpFER.jpg"></image>
+     </view>
+     <view class="section">
+          <view style="font-weight: bold;">采用创新的管理模式</view>
+          <view>亲临婚博会、高端婚礼现场全方位学习</view>
+     </view>
+     <view class="third">
+          <view class="content">
+               <view class="left">
+                   <image src="https://s1.ax1x.com/2022/03/26/qdkKr8.jpg"></image>
+               </view>
+               <view class="right">
+                    <view class="up">
+                        <image src="https://s1.ax1x.com/2022/03/26/qdAqh9.jpg"></image>
+                    </view>
+                    <view class="down">
+                      <image src="https://s1.ax1x.com/2022/03/26/qdACzq.jpg"></image>
+                    </view>
+               </view>
+          </view>
+     </view>
+     <view class="fourth">
+          <view style="font-weight: bold;">加盟培训系统</view>
+          <view>销售班 | 策划班 | 手绘班 | 插花班 | 道具班</view>
+     </view>
+     <view class="fifth">
+          <view wx:for="{{imglist}}" wx:key="id">
+            <image src="{{item.imgurl}}"></image>
+          </view>
+     </view>
+     <view class="content1">
+          <view style="font-weight: bold;">定期发布新品</view>
+          <view>传递花艺文化，走在行业前沿</view>
+     </view>
+     <view class="third">
+          <view class="content">
+               <view class="left">
+                   <image src="https://s1.ax1x.com/2022/03/26/qdmGiF.jpg"></image>
+               </view>
+               <view class="right">
+                    <view class="up">
+                        <image src="https://s1.ax1x.com/2022/03/26/qdm0Z6.jpg"></image>
+                    </view>
+                    <view class="down">
+                      <image src="https://s1.ax1x.com/2022/03/26/qdmWLt.jpg"></image>
+                    </view>
+               </view>
+          </view>
+     </view>
+     <view class="bottom">
+          <view style="font-weight: bold;">为什么选择我们</view>
+          <view>机会只留给懂得把握的人，更多资源尽在这里</view>
+          <view>
+            
+            <image src="https://s1.ax1x.com/2022/03/26/qduI2Q.png"></image>
+            <view>马上成为我们的伙伴</view>
+            <view class="li" bindtap="answer">立即咨询</view>
+          </view>
+     </view>
+</view>
+<view>
+     <view class="{{style1}}">
+     </view>
+     <view class="{{hide}}">
+         <view>18749253712</view>
+          <view bindtap="cancel">取消</view>
+     </view>
+</view>

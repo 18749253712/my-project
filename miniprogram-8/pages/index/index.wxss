@@ -1,0 +1,145 @@
+.box{
+  width: 100%;
+  height: 100%;
+  background-color: whitesmoke;
+}
+.first{
+  width: 100%;
+  height: 220rpx;
+  /* border: 1px solid black; */
+  display: flex;
+  justify-content: space-around;
+  background-color: white;
+}
+.first view{
+  margin-left: 2%;
+  /* border: 1px solid black; */
+}
+.first view:nth-child(1){
+     width: 25%;
+}
+.first view:nth-child(1) image{
+  width: 180rpx;
+  height: 180rpx;
+  margin-top: 20rpx;
+  /* border: 1px solid pink; */
+}
+.first view:nth-child(2){
+  width: 50%;
+  padding-top: 50rpx;
+}
+.first view:nth-child(2) view{
+  width: 100%;
+}
+.first view:nth-child(3){
+  width: 28%;
+  margin-right: 2%;
+  padding-top: 60rpx;
+}
+.first view:nth-child(3) image{
+  width: 40rpx;
+  height: 40rpx;
+  vertical-align: middle;
+}
+.second{
+  width: 100%;
+  height: 120rpx;
+  /* border: 1px solid black; */
+  margin-top: 20rpx;
+  background-color: white;
+  line-height: 120rpx;
+  padding-left: 20rpx;
+  display: flex;
+}
+.second view{
+  width: 50%;
+  height: 120rpx;
+  /* border: 1px solid pink; */
+}
+.second view:nth-child(2) text{
+  display: inline-block;
+  width: 60rpx;
+  height: 60rpx;
+  border: 1px solid gainsboro;
+  line-height: 60rpx;
+  text-align: center;
+}
+.second .input{
+  display: inline-block;
+  width: 100rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+  text-align: center;
+  border: 1px solid black;
+  margin-bottom: -18rpx;
+}
+.third{
+  width: 100%;
+  height: 320rpx;
+  background-color: white;
+  margin-top: 20rpx;
+  /* border: 1px solid black; */
+}
+.third .up{
+  width: 100%;
+  height: 160rpx;
+  border-bottom: 1px solid gainsboro;
+  /* border: 1px solid pink; */
+}
+.third text{
+  color: red;
+}
+.third .up view{
+  width: 90%;
+  height: 80rpx;
+  line-height: 80rpx;
+  margin: 0 auto;
+}
+.third .down view{
+  width: 90%;
+  height: 80rpx;
+  line-height: 80rpx;
+  margin: 0 auto;
+}
+.third .down{
+  width: 100%;
+  height: 160rpx;
+  /* border: 1px solid pink; */
+}
+.fourth{
+  width: 100%;
+  height: 220rpx;
+  background-color: white;
+  margin-top: 20rpx;
+  /* border: 1px solid black; */
+}
+.fourth .up view{
+  width: 90%;
+  height: 110rpx;
+  line-height: 110rpx;
+  margin: 0 auto;
+}
+.fourth .up{
+  width: 100%;
+  height: 220rpx;
+  /* border: 1px solid pink; */
+}
+.bottom{
+  width: 100%;
+  height: 160rpx;
+  line-height: 160rpx;
+  /* border: 1px solid black; */
+  background-color: white;
+  margin-top: 100rpx;
+}
+.bottom text:last-child{
+  display: inline-block;
+  width: 70%;
+  height: 80rpx;
+  background-color: black;
+  color: white;
+  line-height: 80rpx;
+  text-align: center;
+  border-radius: 40rpx;
+  margin-left: 50rpx;
+}

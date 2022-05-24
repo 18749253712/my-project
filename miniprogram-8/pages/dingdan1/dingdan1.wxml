@@ -1,0 +1,248 @@
+<scroll-view scroll-x="true" bindscroll="scroll" class="scroll-view_H list-liu">
+  <view class="scroll-view-W">
+    <view class="scroll-view-item_H swiper-tab-list {{currentTab==0?'on':''}}" data-current="0" bindtap="swichNav" hover-class="eee">全部</view>
+    <view class="scroll-view-item_H swiper-tab-list {{currentTab==1?'on':''}}" data-current="1" bindtap="swichNav" hover-class="eee">待付款</view>
+    <view class="scroll-view-item_H swiper-tab-list {{currentTab==2?'on':''}}" data-current="2" bindtap="swichNav" hover-class="eee">待发货</view>
+    <view class="scroll-view-item_H swiper-tab-list {{currentTab==3?'on':''}}" data-current="3" bindtap="swichNav" hover-class="eee">已发货</view>
+    <view class="scroll-view-item_H swiper-tab-list {{currentTab==4?'on':''}}" data-current="4" bindtap="swichNav" hover-class="eee">待评价</view>
+  </view>
+</scroll-view>
+  
+<!-- 选项卡内容 -->
+<swiper current="{{currentTab}}" class="swiper-box" duration="300" bindchange="bindChange" style="height:{{clientHeight?clientHeight+'px':'auto'}}">  
+    <!-- 全部订单 内容 --> 
+  <swiper-item>   
+    <scroll-view scroll-y="{{true}}" style="height: {{clientHeight?clientHeight+'px':'auto'}}">
+      <view class="kong"></view>
+      <!--写入显示内容  -->
+      <view wx:if="{{carts==''}}" class="vacancy">
+        <!-- <image src="../../../img/icon/icon-vacancy.png"></image> -->
+        <view>您暂时没有相关订单</view>
+      </view>
+      <view wx:else>
+        <view class="list" wx:for="{{carts}}" wx:key="index" data-index="{{index}}">
+          <view class="shop">
+            <view class="shop-left">
+              <text>懂体验</text>
+            </view>
+            <view class="shop-right">
+              <text class="state">已完成</text>
+             <image src="/icon/删除.png" bindtap="del" data-index="{{index}}"></image>
+            </view>
+          </view>
+          <view class="pic-con">
+            <!-- 图片 -->
+            <view class="pic">
+              <image src="https://s1.ax1x.com/2022/03/26/qdkKr8.jpg"></image>
+            </view>
+            <!-- 类型表述 -->
+            <view class="con">
+              <text class="type1">{{item.type1}}</text>
+              <text class="type2">{{item.type2}}</text>
+            </view>
+          </view>
+          <view class="price-right">
+            <!-- 价格 -->
+            <view class="price">
+              <text class="number">共{{item.num}}件商品</text>
+              <text class="price1">实付金额:</text>
+              <text>￥{{item.price}}.00</text>
+            </view>
+          </view>
+          <view class="buy-button">
+            <button id="buy-left">看相似</button>
+            <button id="buy-right">再次购买</button>
+          </view>
+        </view>
+      </view>
+    </scroll-view>
+  </swiper-item>  
+    <!-- 待付款 内容 --> 
+  <swiper-item>  
+    <scroll-view scroll-y="{{true}}" style="height: {{clientHeight?clientHeight+'px':'auto'}}">
+      <view class="kong"></view>
+      <!--写入显示内容  -->
+      <view wx:if="{{carts==''}}" class="vacancy">
+        <!-- <image src="../../../img/icon/icon-vacancy.png"></image> -->
+        <view>您暂时没有相关订单</view>
+      </view>
+      <view wx:else>
+        <view class="list" wx:for="{{carts}}" wx:key="index">
+          <view class="shop">
+            <view class="shop-left">
+              <!-- <image src="../../../img/base/c5f00b6ca884f4f2c802cad6977345f.jpg"></image> -->
+              <text>懂体验</text>
+            </view>
+            <view class="shop-right">
+              <text class="state">已完成</text>
+              <image src="/icon/删除.png" bindtap="del"  data-index="{{index}}"></image>
+            </view>
+          </view>
+          <view class="pic-con">
+            <!-- 图片 -->
+            <view class="pic">
+              <image src="https://s1.ax1x.com/2022/03/26/qdkKr8.jpg"></image>
+            </view>
+            <!-- 类型表述 -->
+            <view class="con">
+              <text class="type1">{{item.type1}}</text>
+              <text class="type2">{{item.type2}}</text>
+            </view>
+          </view>
+          <view class="price-right">
+            <!-- 价格 -->
+            <view class="price">
+              <text class="number">共{{item.num}}件商品</text>
+              <text class="price1">实付金额:</text>
+              <text>￥{{item.price}}.00</text>
+            </view>
+          </view>
+          <view class="buy-button">
+            <button id="buy-right">付款</button>
+          </view>
+        </view>
+      </view>
+    </scroll-view>
+  </swiper-item>  
+    <!-- 待发货 内容 -->
+  <swiper-item>  
+    <scroll-view scroll-y="{{true}}" style="height: {{clientHeight?clientHeight+'px':'auto'}}">
+      <view class="kong"></view>
+      <!--写入显示内容  -->
+      <view wx:if="{{carts==''}}" class="vacancy">
+        <!-- <image src="../../../img/icon/icon-vacancy.png"></image> -->
+        <view>您暂时没有相关订单</view>
+      </view>
+      <view wx:else>
+        <view class="list" wx:for="{{carts}}" wx:key="index">
+          <view class="shop">
+            <view class="shop-left">
+              <!-- <image src="../../../img/base/c5f00b6ca884f4f2c802cad6977345f.jpg"></image> -->
+              <text>懂体验</text>
+            </view>
+            <view class="shop-right">
+              <text class="state">已完成</text>
+              <image src="/icon/删除.png" bindtap="del"  data-index="{{index}}"></image>
+            </view>
+          </view>
+          <view class="pic-con">
+            <!-- 图片 -->
+            <view class="pic">
+              <image src="https://s1.ax1x.com/2022/03/26/qdkKr8.jpg"></image>
+            </view>
+            <!-- 类型表述 -->
+            <view class="con">
+              <text class="type1">{{item.type1}}</text>
+              <text class="type2">{{item.type2}}</text>
+            </view>
+          </view>
+          <view class="price-right">
+            <!-- 价格 -->
+            <view class="price">
+              <text class="number">共{{item.num}}件商品</text>
+              <text class="price1">实付金额:</text>
+              <text>￥{{item.price}}.00</text>
+            </view>
+          </view>
+          <view class="buy-button">
+            <button id="buy-right">提醒发货</button>
+          </view>
+        </view>
+      </view>
+    </scroll-view>
+  </swiper-item>  
+    <!-- 已发货 内容 -->
+  <swiper-item>  
+    <scroll-view scroll-y="{{true}}" style="height: {{clientHeight?clientHeight+'px':'auto'}}">
+      <view class="kong"></view>
+      <!--写入显示内容  -->
+      <view wx:if="{{carts==''}}" class="vacancy">
+        <!-- <image src="../../../img/icon/icon-vacancy.png"></image> -->
+        <view>您暂时没有相关订单</view>
+      </view>
+      <view wx:else>
+        <view class="list" wx:for="{{carts}}" wx:key="index">
+          <view class="shop">
+            <view class="shop-left">
+              <!-- <image src="../../../img/base/c5f00b6ca884f4f2c802cad6977345f.jpg"></image> -->
+              <text>懂体验</text>
+            </view>
+            <view class="shop-right">
+              <text class="state">已完成</text>
+              <image src="/icon/删除.png" bindtap="del"  data-index="{{index}}"></image>
+            </view>
+          </view>
+          <view class="pic-con">
+            <!-- 图片 -->
+            <view class="pic">
+              <image src="https://s1.ax1x.com/2022/03/26/qdkKr8.jpg"></image>
+            </view>
+            <!-- 类型表述 -->
+            <view class="con">
+              <text class="type1">{{item.type1}}</text>
+              <text class="type2">{{item.type2}}</text>
+            </view>
+          </view>
+          <view class="price-right">
+            <!-- 价格 -->
+            <view class="price">
+              <text class="number">共{{item.num}}件商品</text>
+              <text class="price1">实付金额:</text>
+              <text>￥{{item.price}}.00</text>
+            </view>
+          </view>
+          <view class="buy-button">
+            <button id="buy-right">已发货</button>
+          </view>
+        </view>
+      </view>
+    </scroll-view>
+  </swiper-item> 
+    <!-- 已完成 内容 -->
+  <swiper-item>  
+    <scroll-view scroll-y="{{true}}" style="height: {{clientHeight?clientHeight+'px':'auto'}}">
+      <view class="kong"></view>
+      <!--写入显示内容  -->
+      <view wx:if="{{carts==''}}" class="vacancy">
+        <!-- <image src="../../../img/icon/icon-vacancy.png"></image> -->
+        <view>您暂时没有相关订单</view>
+      </view>
+      <view wx:else>
+        <view class="list" wx:for="{{carts}}" wx:key="index">
+          <view class="shop">
+            <view class="shop-left">
+              <!-- <image src="../../../img/base/c5f00b6ca884f4f2c802cad6977345f.jpg"></image> -->
+              <text>懂体验</text>
+            </view>
+            <view class="shop-right">
+              <text class="state">待评价</text>
+              <image src="/icon/删除.png" bindtap="del"  data-index="{{index}}"></image>
+            </view>
+          </view>
+          <view class="pic-con">
+            <!-- 图片 -->
+            <view class="pic">
+              <image src="https://s1.ax1x.com/2022/03/26/qdkKr8.jpg"></image>
+            </view>
+            <!-- 类型表述 -->
+            <view class="con">
+              <text class="type1">{{item.type1}}</text>
+              <text class="type2">{{item.type2}}</text>
+            </view>
+          </view>
+          <view class="price-right">
+            <!-- 价格 -->
+            <view class="price">
+              <text class="number">共{{item.num}}件商品</text>
+              <text class="price1">实付金额:</text>
+              <text>￥{{item.price}}.00</text>
+            </view>
+          </view>
+          <view class="buy-button">
+            <button id="buy-right">立即评价</button>
+          </view>
+        </view>
+      </view>
+    </scroll-view>
+  </swiper-item> 
+</swiper>  

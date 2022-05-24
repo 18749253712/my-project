@@ -1,0 +1,10 @@
+<!--pages/dingdan/dingdan.wxml-->
+<view class="box">
+     <view class="content">
+        <image src="https://s1.ax1x.com/2022/03/30/qcf7ge.png"></image>
+     </view>
+     <view class="middle">
+          <text bindtap="dingdan">查看订单</text>
+          <text bindtap="shouye">返回首页</text>
+     </view>
+</view>

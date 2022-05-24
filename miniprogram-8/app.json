@@ -1,0 +1,49 @@
+{
+  "pages":[
+    "pages/shouye/shouye",
+    "pages/dingdan/dingdan",
+    "pages/index/index",
+    "pages/index1/index1",
+    "pages/dingdan1/dingdan1",
+    "pages/jiam/jiam",
+    "pages/yy/yy",
+    "pages/my/my",
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "婚礼",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "list": [
+      {
+      "pagePath": "pages/shouye/shouye",
+      "text": "首页",
+      "iconPath": "/icon/首页 (1)(1).png",
+      "selectedIconPath": "/icon/首页(1).png"
+     },
+     {
+      "pagePath": "pages/jiam/jiam",
+      "text": "加盟",
+      "iconPath": "/icon/加盟商码 (1)(1).png",
+      "selectedIconPath": "/icon/加盟商码(1).png"
+     },
+     {
+      "pagePath": "pages/yy/yy",
+      "text": "预约",
+      "iconPath": "/icon/预约 (1)(1).png",
+      "selectedIconPath": "/icon/预约(1).png"
+     },
+     {
+      "pagePath": "pages/my/my",
+      "text": "我的",
+      "iconPath": "/icon/我的 (1)(1).png",
+      "selectedIconPath": "/icon/我的(1).png"
+     }
+  ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

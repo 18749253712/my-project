@@ -1,0 +1,177 @@
+/* pages/jiam/jiam.wxss */
+.box{
+  width: 100%;
+  height: 100%;
+}
+.box .head{
+  width: 100%;
+  height: 350rpx;
+  /* border: 1px solid black; */
+}
+.head image{
+  width: 100%;
+  height: 100%;
+}
+.section{
+  width: 100%;
+  height: 140rpx;
+  /* border: 1px solid black; */
+  background-color: pink;
+  margin-top: 20rpx;
+}
+.section view{
+  text-align: center;
+  line-height: 70rpx;
+}
+.third{
+  width: 100%;
+  height: 340rpx;
+  /* border: 1px solid black; */
+  margin-top: 20rpx;
+  background-color: white;
+}
+.content{
+  width: 95%;
+  height: 340rpx;
+  margin: 0 auto;
+  display: flex;
+}
+.content .left{
+  width: 49%;
+  height: 340rpx;
+}
+.content .left image{
+  width: 100%;
+  height: 100%;
+  border-radius: 15rpx;
+}
+.content .right{
+  width: 49%;
+  height: 340rpx;
+  margin-left: 2%;
+}
+.content .right image{
+  width: 100%;
+  height: 100%;
+  border-radius: 15rpx;
+}
+.content .right .up{
+  width: 100%;
+  height: 48%;
+}
+.content .right .down{
+  width: 100%;
+  height: 48%;
+  margin-top: 4%;
+}
+.fourth{
+  width: 100%;
+  height: 140rpx;
+  /* border: 1px solid black; */
+  background-color: gainsboro;
+  margin-top: 20rpx;
+}
+.fourth view{
+  text-align: center;
+  line-height: 70rpx;
+}
+.fifth{
+  width: 95%;
+  height: 520rpx;
+  /* border: 1px solid black; */
+  margin-top: 20rpx;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+.fifth view{
+  width: 48%;
+  height: 48%;
+  margin-left: 2%;
+  margin-top: 2%;
+}
+.fifth view image{
+  width: 100%;
+  height: 100%;
+  border-radius: 15rpx;
+}
+.content1{
+  width: 100%;
+  height: 140rpx;
+  /* border: 1px solid black; */
+  background-color: pink;
+  margin-top: 20rpx;
+}
+.content1 view{
+  text-align: center;
+  line-height: 70rpx;
+}
+.bottom{
+  width: 100%;
+  height: 650rpx;
+  background-color: #F4F4F4;
+  margin-top: 20rpx;
+}
+.bottom view{
+  text-align: center;
+}
+.li{
+  width: 90%;
+  height: 80rpx;
+  background-color: black;
+  text-align: center;
+  line-height: 80rpx;
+  color: white;
+  margin: 0 auto;
+  margin-bottom: 40rpx;
+}
+.big{
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  position: fixed;
+  top: 0;
+  left: 0;
+  opacity: 0.9;
+  z-index: 999;
+  /* display: none; */
+}
+.big1{
+  width: 100%;
+  height: 100%;
+  background-color: gainsboro;
+  position: fixed;
+  top: 0;
+  left: 0;
+  opacity: 0.8;
+  z-index: 2;
+  display: none;
+}
+.hide{
+  width: 100%;
+  height: 180rpx;
+  background-color: white;
+  z-index: 999;
+  position: fixed;
+  bottom: 0;
+  opacity: 1;
+  /* display: none; */
+}
+.hide1{
+  width: 100%;
+  height: 180rpx;
+  background-color: white;
+  z-index: 999;
+  position: absolute;
+  bottom: 0rpx;
+  opacity: 1;
+  display: none;
+}
+.hide view{
+  text-align: center;
+  line-height: 80rpx;
+}
+/* .bottom view text{
+  position: relative;
+  top: 80rpx;
+} */

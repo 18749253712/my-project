@@ -1,0 +1,39 @@
+/* pages/dingdan/dingdan.wxss */
+.box{
+  width: 100%;
+  height: 100%;
+  background-color: #F2F1F0;
+  position: fixed;
+  top: 0;
+}
+.content{
+  width: 100%;
+  height: 500rpx;
+  /* border: 1px solid pink; */
+  text-align: center;
+  /* margin: 0 auto; */
+}
+.middle{
+  width: 100%;
+  height: 300rpx;
+  text-align: center;
+}
+.middle text{
+  display: inline-block;
+  width: 220rpx;
+  height: 80rpx;
+  border: 1px solid green;
+  text-align: center;
+  line-height: 80rpx;
+  margin-left: 50rpx;
+  margin-right: 30rpx;
+  border-radius: 10rpx;
+}
+.middle text:first-child{
+  background-color: green;
+  color: white;
+}
+.middle text:last-child{
+  background-color: white;
+  color: black;
+}

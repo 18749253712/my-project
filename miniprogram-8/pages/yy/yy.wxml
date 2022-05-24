@@ -1,0 +1,62 @@
+<view class="box">
+     <view class="content">
+          <view class='topTabSwiper'>
+          <view class='tab  {{currentData == 0 ? "tabBorer" : ""}}'  data-current = "0" bindtap='checkCurrent'>全部</view>
+          <view class='tab  {{currentData == 1 ? "tabBorer" : ""}}'  data-current = "1" bindtap='checkCurrent'>婚礼</view>
+          <view class='tab  {{currentData == 2 ? "tabBorer" : ""}}'  data-current = "2" bindtap='checkCurrent'>求婚</view>
+          </view>
+          <swiper current="{{currentData}}" class='swiper' style="height:600px;" duration="300" bindchange="bindchange">
+          <swiper-item>
+               <view class='swiper_con'>
+                    <view class="all" wx:for="{{alllist}}" wx:key="id" wx:for-index="index">
+                         <view><image src="{{item.imgurl}}"></image></view>
+                         <view class="one">{{item.tltle}}</view>
+                         <view class="tao">{{item.text}}</view>
+                         <view class="three">
+                             <text style="color: black;">价格面议</text>
+                             <text>已预约:</text>
+                             <text>{{item.text1}}</text>
+                             <text>剩余：</text>
+                             <text>{{item.price}}</text>
+                             <text class="price" bindtap="click" data-id="{{item.id}}" data-index="{{index}}">立即预约</text>
+                         </view>
+                    </view>
+               </view>
+          </swiper-item>
+          <swiper-item>
+               <view class='swiper_con'>
+                    <view class="all" wx:for="{{alllist}}" wx:key="id">
+                         <view><image src="{{item.imgurl}}"></image></view>
+                         <view class="one">{{item.tltle}}</view>
+                         <view class="tao">{{item.text}}</view>
+                         <view class="three">
+                             <text style="color: black;">价格面议</text>
+                             <text>已预约:</text>
+                             <text>{{item.text1}}</text>
+                             <text>剩余：</text>
+                             <text>{{item.price}}</text>
+                             <text class="price" bindtap="click">立即预约</text>
+                         </view>
+                    </view>
+               </view>
+          </swiper-item>
+          <swiper-item>
+               <view class='swiper_con'>
+                    <view class="all" wx:for="{{alllist}}" wx:key="id" wx:for-index="index">
+                         <view><image src="{{item.imgurl}}"></image></view>
+                         <view class="one">{{item.tltle}}</view>
+                         <view class="tao">{{item.text}}</view>
+                         <view class="three">
+                             <text style="color: black;">价格面议</text>
+                             <text>已预约:</text>
+                             <text>{{item.text1}}</text>
+                             <text>剩余：</text>
+                             <text>{{item.price}}</text>
+                             <text class="price" bindtap="click" data-index="{{index}}">立即预约</text>
+                         </view>
+                    </view>
+               </view>
+          </swiper-item> 
+          </swiper>
+     </view>
+</view>

@@ -1,0 +1,103 @@
+<!--pages/shouye/shouye.wxml-->
+<view class="box">
+  
+    <swiper class="top" autoplay indicator-dots="true" indicator-color="pink" circular>
+             <swiper-item>
+                 <image src="https://s1.ax1x.com/2022/03/23/qlrFDs.jpg"></image>
+             </swiper-item>
+             <swiper-item>
+                  <image src="https://s1.ax1x.com/2022/03/24/qGTFd1.jpg"></image>
+             </swiper-item>
+     </swiper>
+     <view class="content">
+          <view class="begin">
+               <image src="https://s1.ax1x.com/2022/03/24/qGT2y4.jpg"></image>
+          </view>
+          <view class="h1">
+            <view>
+              <text>派对布置</text>
+              <text>/</text>
+              <text>婚礼布置</text>
+              <text>/</text>
+              <text>展览宴会布置</text>
+            </view>
+            <view>联系电话：000-0000000</view>
+          </view>
+          <view class="section">
+              <view wx:for="{{imagelist}}" wx:key="id" class="beginview">
+                 <image src="{{item.imgurl}}"></image>
+                 <view class="one">{{item.title}}</view>
+                 <view class="two">{{item.text}}</view>
+              </view>
+          </view>
+          <view class="footer" wx:for="{{imglist}}" wx:key="id">
+               <view class="left">
+                  <image src="{{item.imgurl}}"></image>
+               </view>
+               <view class="right">
+                    <view class="up">{{item.tltle}}</view>
+                    <view class="down">
+                        <view>{{item.text}}</view>
+                        <view>{{item.text1}}</view>
+                        <view>{{item.text2}}</view>
+                    </view>
+                    <view class="click" bindtap="answer">
+                         点我咨询
+                         <view></view>
+                    </view>
+               </view>
+          </view>
+          <view class="show">
+             <image src="https://s1.ax1x.com/2022/03/25/qYgrK1.jpg"></image>
+             <view>案例展示</view>
+          </view>
+          <view class="mv">
+               <video poster="https://409233.s81i.faiusr.com/2/101/AFEIkf0YEAIYACDW27veBSjgj9rMATCyBTiEA0Bl.jpg" src="https://qz.faisys.com/image/default_video.mp4" style="width: 100%;"></video>
+               <view>婚礼手捧花制作</view>
+          </view>
+          <view class="form"></view>
+          <view class="form1">
+              <view>Private Custom Form</view>
+              <view>私人订制预约表</view>
+          </view>
+          <view class="content1">
+               <view>
+               <text>*</text>
+               怎么称呼您
+               </view>
+               <view><input placeholder="请输入姓名" bind:touchstart="handleTap1" class="{{style}}" data-id="0"/></view>
+               <view>
+                    <text>*</text>
+                    联系电话
+               </view>
+               <view>
+                   <input placeholder="请输入电话号码"/>
+               </view>
+               <view>
+               <text>*</text>
+               E-mail
+               </view>
+               <view><input placeholder="请输入E-mail" /></view>
+               <view>
+               <text>*</text>
+               布置日期时间
+               </view>
+               <view><input placeholder="请输入日期时间"/></view>
+               <view>
+               <text>*</text>
+               需要注意事项
+               </view>
+               <view class="last"><input placeholder="请输入需要注意事项"/></view>
+              <view bindtap="submit">马上提交</view>
+          </view>
+     </view>
+</view>
+
+<view>
+     <view class="{{style1}}">
+     </view>
+     <view class="{{hide}}">
+         <view>18749253712</view>
+          <view bindtap="cancel">取消</view>
+     </view>
+</view>

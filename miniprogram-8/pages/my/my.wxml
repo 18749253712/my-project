@@ -1,0 +1,54 @@
+<!--pages/my/my.wxml-->
+<view class="box">
+    <view class="first">
+        <view><image src="https://s1.ax1x.com/2022/03/29/qyvc8A.png"></image></view>
+      请点击登录
+    </view> 
+    <view class="list">
+        <view class="up">
+            <text>所有订单</text>
+            <text>></text>
+        </view>
+        <view class="down">
+           <view class="one"  bindtap="noPay">
+                <image src="https://s1.ax1x.com/2022/03/29/q6eEUs.png"></image>
+                <view >待支付</view>
+           </view>
+           <view class="one" bindtap="noSend">
+                <image src="https://s1.ax1x.com/2022/03/29/q6eMKU.png"></image>
+                <view>待发货</view>
+           </view>
+           <view class="one" bindtap="sended">
+                <image src="https://s1.ax1x.com/2022/03/29/q6eUxK.png"></image>
+                <view>已完成</view>
+            </view>
+           <view class="one" bindtap="completed">
+                <image src="https://s1.ax1x.com/2022/03/29/q6eDVH.png"></image>
+                <view>待评价</view>   
+        </view>
+        </view>
+    </view>
+    <view class="yuan">
+         <view><text>最新消息</text><text>></text></view>
+         <view><text>我的订阅</text><text>></text></view>
+         <view><text>我的表单</text><text>></text></view>
+    </view>
+    <view class="yuan1">
+        <view>
+           <image src="https://s1.ax1x.com/2022/03/29/q6nwAH.png"></image>
+           <text>xxx省xxx市xxx县xxx路xxx号</text><text>100m</text><text>></text>
+        </view>
+        <view>
+          <image src="https://s1.ax1x.com/2022/03/29/q6MQAg.png"></image>
+          <text>18749253712</text>
+        </view>
+        <view>
+           <image src="https://s1.ax1x.com/2022/03/29/q6KLtJ.png"></image>
+           <text>周一至周五 09:00-18:00</text>
+        </view>
+        <view>
+          <image src="https://s1.ax1x.com/2022/03/29/q6Mkhd.png"></image>
+          <text>这是鲜花植物行业的预约类模板</text>
+        </view>
+    </view>
+</view>
